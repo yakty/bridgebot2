@@ -53,7 +53,7 @@ var settings = module.exports = {
     // Serve up the welcome page
     httpStatic: path.join(__dirname,"public"),
 
-    functionGlobalContext: { },
+    functionGlobalContext: { VCAP_SERVICES: JSON.parse(process.env.VCAP_SERVICES) },
 
     // Configure the logging output
     logging: {
