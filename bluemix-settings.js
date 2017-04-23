@@ -55,7 +55,7 @@ var settings = module.exports = {
 
     functionGlobalContext: {
     	VCAP_SERVICES: JSON.parse(process.env.VCAP_SERVICES),
-    	process: process
+    	env: process.env
     },
 
     // Configure the logging output
