@@ -54,7 +54,8 @@ var settings = module.exports = {
     httpStatic: path.join(__dirname,"public"),
 
     functionGlobalContext: {
-    	VCAP_SERVICES: JSON.parse(process.env.VCAP_SERVICES)
+    	VCAP_SERVICES: JSON.parse(process.env.VCAP_SERVICES),
+    	process: process
     },
 
     // Configure the logging output
