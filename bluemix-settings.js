@@ -55,7 +55,8 @@ var settings = module.exports = {
 
     functionGlobalContext: {
     	VCAP_SERVICES: JSON.parse(process.env.VCAP_SERVICES),
-    	env: process.env
+    	env: process.env,
+    	crypto: require('crypto')
     },
 
     // Configure the logging output
